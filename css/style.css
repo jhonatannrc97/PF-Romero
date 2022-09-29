@@ -38,6 +38,17 @@ h1,h2,h3{
     max-width: 120rem;
     margin: 0 auto;
 }
+/*utilidades*/
+.w-100{
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-start;
+}
+
 .nav-bg{
     background-color: var(--color1);
 }
@@ -110,10 +121,20 @@ h1,h2,h3{
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5rem;
+    width: 40%;
+    text-align: center;
     border: none;
 
 }
+@media(min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
+.boton:hover{
+    cursor: pointer;
 
+}
 @media(min-width: 480px){
     .productos{
         display: grid;
@@ -211,10 +232,17 @@ h1,h2,h3{
 
 }
 
-.contenedor-campos{
+@media(min-width: 480px){
+  .contenedor-campos{
+    display: grid;
+    grid-template-columns: 95%;
+    column-gap: 1rem;
+
+  }
 
 
 }
+
 .campo{
     margin-bottom: 1rem;
 }
@@ -223,6 +251,10 @@ h1,h2,h3{
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
+}
+.campo textarea{
+    height: 20rem;
+
 }
 .input-text{
     width: 100%;
