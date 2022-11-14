@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+  --color1: #2C3333;
+  --color2: #395B64;
+  --color3: #A5C9CA;
+  --color5: #E7F6F2;
+  --color6: #ffffff;
+  --color7:#F70361;
+  --color8: #DAD5D7;
+  --color9: #CBFCFA;
+  
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 16px;
+  font-family: 'Krub', sans-serif;
+  background-image: linear-gradient(to top, var(--color5)0%, var(--color8)100%);
+}
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 2.8rem;
+}
+h3{
+  font-size: 1.8rem;
+}
+h1,h2,h3{
+  text-align: center;
+}
+  
+.titulo1 span{
+  font-size: 2rem;
+}
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+/*utilidades*/
+.w-100{
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
+.alinear-derecha{
+  justify-content: flex-start;
+}
+
+.nav-bg{
+  background-color: var(--color1);
+}
+.navegacion_principal{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+@media (min-width: 480px){
+  .navegacion_principal{
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
+
+.navegacion_principal a{
+  display: block;
+  text-align: center;
+  color: var(--color6);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.navegacion_principal a:hover{
+  background-color: var(--color2);
+  color: var(--color7);
+}
+
+
+
+.imagen1{
+  background-image: url(../img/slide\ mobile-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+ /* padding: 40px;*/
+  position: relative;
+}
+.contenido_imagen{
+  position:absolute;
+  background-color: rgba(0,0,0, .4);
+  background-color: rgb(0 0 0 /40%);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido_imagen h2,
+.contenido_imagen p{
+  color: var(--color6);
+}
+.ubicacion{
+  display: flex;
+  align-items: flex-end;
+}
+.boton{
+  background-color: var(--color1);
+  color: var(--color6);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5rem;
+  width: 40%;
+  text-align: center;
+  border: none;
+
+}
+@media(min-width: 768px){
+  .boton{
+      width: auto;
+  }
+}
+.boton:hover{
+  cursor: pointer;
+
+}
+@media(min-width: 480px){
+  .productos{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1rem;
+  }
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.producto h3{
+  color: var(--color2);
+  font-weight: normal;
+
+}
+.servicio p{
+  line-height: 2;
+
+}
+.producto .iconos{
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--color1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation-name: mianimacion;
+  animation-duration: 10s;
+  position: relative;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+
+}
+
+
+
+
+.sombra{
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(166,159,166,0.45);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(166,159,166,0.45);
+  box-shadow: 0px 5px 15px 0px rgba(166,159,166,0.45);
+  background-color: var(--color6);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.img2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img3{
+  
+  width: 500px;
+  height: 400px;
+}
+.titulo2{
+  text-align: center;
+}
+
+
+/*formulario*/
+.formulario{
+  background-color:  var(--color3);
+  width: min(60rem, 100%);
+  margin: auto;
+  padding: 5rem;
+  border-radius: 1rem;
+
+
+}
+.formulario fieldset{
+  border: none;
+
+}
+.formulario legend{
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--color2);
+
+}
+
+@media(min-width: 480px){
+.contenedor-campos{
+  display: grid;
+  grid-template-columns: 95%;
+  column-gap: 1rem;
+
+}
+
+
+}
+
+.campo{
+  margin-bottom: 1rem;
+}
+.campo label{
+  color: var(--color2);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+.campo textarea{
+  height: 20rem;
+
+}
+.input-text{
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
